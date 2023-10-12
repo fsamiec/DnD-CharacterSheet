@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Character } from '../models/Character';
+import { Character } from '../../models/Character';
 
 @Component({
   selector: 'char-base',

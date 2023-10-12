@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
-import { CharBaseComponent } from './char-base/char-base.component';
+import { CharBaseComponent } from './char/base/char-base.component';
+import { ImportExportComponent } from './import-export/import-export.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CharBaseComponent
+    CharBaseComponent,
+    ImportExportComponent
   ],
   imports: [
     BrowserModule,
