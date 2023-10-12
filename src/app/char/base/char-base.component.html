@@ -1,4 +1,4 @@
-<div class="bg-sky-500 hover:bg-sky-700">
+<div class="rounded-xl border border-cyan-400 dark:border-cyan-700">
   <div>
     <label for="name">Name</label>
     <input
@@ -21,6 +21,10 @@
   <div>
     <label for="race">Volk</label>
     <input id="race" [(ngModel)]="char.base.race" placeholder="Rasse" />
+    <select>
+      <option *ngFor="let value of keys(races)" [ngValue]="races[value]">{{value}}</option>
+    </select>
+
     <label for="sub_race">Subvolk</label>
     <input id="sub_race" [(ngModel)]="char.base.sub_race" placeholder="Rasse" />
   </div>
