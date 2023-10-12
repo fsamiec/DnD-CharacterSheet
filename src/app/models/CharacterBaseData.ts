@@ -7,5 +7,5 @@ export interface CharacterBaseData {
       background: string;
       race: string;
       sub_race: string;
-      experience_points: number;
+      xp: number;
 }

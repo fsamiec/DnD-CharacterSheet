@@ -15,7 +15,7 @@ export class ImportExportComponent {
       character_name: 'Niptac',
       character_class: 'Schurke',
       background: 'Scharlatan',      
-      experience_points: 0,
+      xp: 0,
       level: 3,
       player_name: 'Frank',
       race: 'Gnom',
@@ -29,12 +29,4 @@ export class ImportExportComponent {
     var uri = this.sanitizer.bypassSecurityTrustUrl("data:text/json;charset=UTF-8," + encodeURIComponent(json));
         this.downloadJsonHref = uri;
   }
-
-  public onExportClick() {
-    var json = this.importExportService.export(this.char);
-    var uri = this.sanitizer.bypassSecurityTrustUrl("data:text/json;charset=UTF-8," + encodeURIComponent(json));
-        this.downloadJsonHref = uri;
-  }
-
-  
 }

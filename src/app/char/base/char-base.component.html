@@ -6,11 +6,7 @@
 </div>
 <div>
   <label for="player_name">Spielername</label>
-  <input
-    id="player_name"
-    [(ngModel)]="char.base.player_name"
-    placeholder="Spielername"
-  />
+  <input id="player_name" [(ngModel)]="char.base.player_name"placeholder="Spielername" />
 </div>
 
 <div>
@@ -22,14 +18,10 @@
 
 <div>
   <label for="background">Hintergrund</label>
-  <input
-    id="background"
-    [(ngModel)]="char.base.background"
-    placeholder="HIntergrund"
-  />
+  <input id="background" [(ngModel)]="char.base.background" placeholder="HIntergrund" />
 </div>
 
 <div>
-  <label>Erfahrungspunkte</label>
-  <input type="text" />
+  <label for="xp" >Erfahrungspunkte</label>
+  <input id="xp" [(ngModel)]="char.base.xp" placeholder="HIntergrund" />
 </div>

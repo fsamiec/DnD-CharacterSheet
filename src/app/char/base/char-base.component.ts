@@ -12,7 +12,7 @@ export class CharBaseComponent {
       character_name: 'Niptac',
       character_class: 'Schurke',
       background: 'Scharlatan',      
-      experience_points: 0,
+      xp: 0,
       level: 3,
       player_name: 'Frank',
       race: 'Gnom',
