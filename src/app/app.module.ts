@@ -7,19 +7,22 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { CharBaseComponent } from './char/base/char-base.component';
 import { ImportExportComponent } from './import-export/import-export.component';
+import { CharStatsComponent } from './char/stats/char-stats.component';
+import { DummyData } from './models/DummyData';
 
 @NgModule({
   declarations: [
     AppComponent,
     CharBaseComponent,
-    ImportExportComponent
+    ImportExportComponent,
+    CharStatsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DummyData],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

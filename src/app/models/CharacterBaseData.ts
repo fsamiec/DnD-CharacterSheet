@@ -6,6 +6,15 @@ export interface CharacterBaseData {
       player_name: string;
       background: string;
       race: string;
-      sub_race: string;
-      xp: number;
+      max_hit_points: number;
+      current_hit_points: number;
+      temporary_hit_points: number;
+      hit_dice: number;      
+}
+
+export interface CharacterFlavor {
+      personality_traits: string;
+      ideals: string;
+      bonds: string;
+      flaws: string;
 }

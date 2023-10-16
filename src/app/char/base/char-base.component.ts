@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { Character } from '../../models/Character';
 import { CharacterRace } from '../../models/enums/CharacterRace';
 import { FormBuilder } from '@angular/forms';
+import { DummyData } from 'src/app/models/DummyData';
+import { CharacterService } from 'src/app/services/character.service';
+
 
 @Component({
   selector: 'char-base',
@@ -9,24 +12,12 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./char-base.component.scss'],
 })
 export class CharBaseComponent {
-  race = CharacterRace;
-  races: CharacterRace[] = [];
-
-  keys = Object.keys;
+ char!: Character;
   
-  constructor(private fb: FormBuilder) {   
-  }
+ constructor(private characterService: CharacterService) { }
 
-  char: Character = {
-    base: {
-      character_name: 'Niptac',
-      character_class: 'Schurke',
-      background: 'Scharlatan',
-      xp: 0,
-      level: 3,
-      player_name: 'Frank',
-      race: 'Gnom',
-      sub_race: 'Felsengnom',
-    },
-  };
+ ngOnInit(): void {
+   this.characterService.getCharacter().subscribe(c => this.char = c);
+ }
+ 
 }
