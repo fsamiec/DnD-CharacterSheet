@@ -16,14 +16,12 @@ export class CharacterService {
     private skillsService: SkillsService
     ) { }
 
-  getCharacter():Observable<Character> {
+  public getCharacter():Observable<Character> {
     let character = this.dummyData.char;
     this.statsService.calculateStats(character);
     this.skillsService.calculateSkillValue(character);
 
     return of(character);
   }
-
-  
-  
+    
 }

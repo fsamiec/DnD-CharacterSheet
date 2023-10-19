@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Skills } from '../models/enums/Skills';
 import { Character } from '../models/Character';
-import { CharacterSkills } from '../models/CharacterSkills';
 import { Stats } from '../models/enums/Stats';
 import { Classes } from '../models/enums/Classes';
 
@@ -12,11 +11,7 @@ export class SkillsService {
 
   constructor() { }
 
-  getSkillShortName(skill : Skills) : string {
-    return "Ja leck mich doch am arsch"
-  }
-
-  calculateSkillValue(character: Character) : void {
+  public calculateSkillValue(character: Character) : void {
     character.skills.forEach(skill => {      
       var value = 0;
 

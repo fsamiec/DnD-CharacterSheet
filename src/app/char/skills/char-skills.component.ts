@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Character } from 'src/app/models/Character';
+import { Stats } from 'src/app/models/enums/Stats';
 import { CharacterService } from 'src/app/services/character.service';
 
 @Component({
@@ -19,4 +20,9 @@ export class CharSkillsComponent {
       this.character = c;
     });
   }
+
+  public getShortName(stat : Stats) : string {
+    return stat.toString().substring(0,3);
+  }
+
 }

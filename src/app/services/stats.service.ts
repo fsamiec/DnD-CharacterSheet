@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Character } from '../models/Character';
-import { CalculatedStats } from '../models/CalculatedStats';
 import { CharacterSkills } from '../models/CharacterSkills';
 import { Skills } from '../models/enums/Skills';
 
@@ -11,7 +10,7 @@ export class StatsService {
 
   constructor() { }
 
-  calculateStats(character: Character) : void {    
+  public calculateStats(character: Character) : void {    
       character.stats.calculated.strength = this.calculateBonus(character.stats.strength),
       character.stats.calculated.charisma = this.calculateBonus(character.stats.charisma),
       character.stats.calculated.constitution = this.calculateBonus(character.stats.constitution),
