@@ -1,16 +1,45 @@
 
-Stärke
+<div>
+    <label for="strength">Stärke</label>    
+    <input id="strength" [(ngModel)]="character.stats.strength" placeholder="Stärke" />
+    <label>{{character.stats.calculated.strength}}</label>
+</div>
 
-Geschicklichkeit
+<div>
+    <label for="dexterity">Geschicklichkeit</label>    
+    <input id="dexterity" [(ngModel)]="character.stats.dexterity" placeholder="Geschicklichkeit" />
+    <label>{{character.stats.calculated.dexterity}}</label>
+</div>
 
-Konstitution
+<div>
+    <label for="constitution">Konstitution</label>    
+    <input id="constitution" [(ngModel)]="character.stats.constitution" placeholder="Konstitution" />
+    <label>{{character.stats.calculated.constitution}}</label>
+</div>
 
-Intelligenz
+<div>
+    <label for="intelligence">Intelligenz</label>    
+    <input id="constitution" [(ngModel)]="character.stats.intelligence" placeholder="Intelligenz" />
+    <label>{{character.stats.calculated.intelligence}}</label>
+</div>
 
-Weisheit
+<div>
+    <label for="wisdom">Weisheit</label>    
+    <input id="wisdom" [(ngModel)]="character.stats.wisdom" placeholder="Weisheit" />
+    <label>{{character.stats.calculated.wisdom}}</label>
+</div>
 
-Charisma
+<div>
+    <label for="charisma">Charisma</label>    
+    <input id="charisma" [(ngModel)]="character.stats.wisdom" placeholder="charisma" />
+    <label>{{character.stats.calculated.charisma}}</label>
+</div>
 
-Passive Weisheit
+<div>    
+    <label>Passive Weisheit: {{character.stats.calculated.passive_wisdom}}</label>
+    <label>Übungsbonus: {{character.stats.calculated.proffeciency_bonus}}</label>
+</div>
 
-Übungsbonus
+
+
+

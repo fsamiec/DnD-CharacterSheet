@@ -34,22 +34,34 @@ export class DummyData {
       sleight_of_hand: 0,
       stealth: 0,
       survival: 0,
+      has_advantage: ["sleight_of_hand", "stealth", "deception", "persuasion", "perception"],
+      has_double_advantage: ["sleight_of_hand", "deception", ""]
     },
-    stats: {
-      strength: 0,
-      dexterity: 0,
-      constitution: 0,
-      intelligence: 0,
-      wisdom: 0,
-      charisma: 0,
-      proficiency_bonus: 0,
-      saving_throws: {
+    stats: {      
+      strength: 8,
+      dexterity: 16,
+      constitution: 14,
+      intelligence: 14,
+      wisdom: 10,
+      charisma: 14,
+      calculated: {
         strength: 0,
         dexterity: 0,
         constitution: 0,
         intelligence: 0,
         wisdom: 0,
-        charisma: 0,
+        charisma: 0,  
+        passive_wisdom: 0,
+        proffeciency_bonus: 0
+      },
+      saving_throws: {
+        strength: 0,        
+        dexterity: 0,
+        constitution: 0,        
+        intelligence: 0,        
+        wisdom: 0,        
+        charisma: 0,        
+        advantages: ["dexterity, intelligence"]
       },
     },
   };

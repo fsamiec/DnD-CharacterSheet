@@ -3,20 +3,18 @@ import { Character } from 'src/app/models/Character';
 import { CharacterService } from 'src/app/services/character.service';
 
 @Component({
-  selector: 'char-stats',
-  templateUrl: './char-stats.component.html'  
+  selector: 'char-skills',
+  templateUrl: './char-skills.component.html'  
 })
 
-export class CharStatsComponent {
-  character!: Character;    
-
+export class CharSkillsComponent {
+  character!: Character;  
+  
   constructor(private characterService: CharacterService) { }
  
   ngOnInit(): void {
   this.characterService.getCharacter().subscribe(c => {
-      this.character = c
-      this.character.stats.calculated = this.characterService.calculateStats(c);
+      this.character = c      
     });
   }
-  
 }

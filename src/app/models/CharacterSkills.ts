@@ -1,4 +1,3 @@
-
 export interface CharacterSkills {
       acrobatics: number;
       animal_handling: number;
@@ -18,4 +17,6 @@ export interface CharacterSkills {
       sleight_of_hand: number;
       stealth: number;
       survival: number;
+      has_advantage: string[];
+      has_double_advantage: string[];
 }
