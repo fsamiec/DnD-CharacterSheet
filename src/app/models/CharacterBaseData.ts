@@ -12,9 +12,3 @@ export interface CharacterBaseData {
       hit_dice: number;      
 }
 
-export interface CharacterFlavor {
-      personality_traits: string;
-      ideals: string;
-      bonds: string;
-      flaws: string;
-}

@@ -1,4 +1,3 @@
-
 export enum Stats {
     strength = 'Stärke',
     dexterity = 'Geschicklichkeit',

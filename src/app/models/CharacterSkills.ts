@@ -2,8 +2,8 @@ import { Skills } from "./enums/Skills";
 import { Stats } from "./enums/Stats";
 
 export interface CharacterSkills{
-      advantage: number;      
+      proficiency: number;      
       value: number;
-      base: Stats;
+      attribute: Stats;
       name: Skills
 }

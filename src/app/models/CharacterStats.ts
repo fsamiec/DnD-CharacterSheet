@@ -1,4 +1,3 @@
-
 import { BaseStats } from "./BaseStats";
 import { CalculatedStats } from "./CalculatedStats";
 import { SavingThrows } from "./SavingThrows";

@@ -9,5 +9,3 @@ export enum Races {
   Halfling = 'Halbling',
   Human = 'Mensch',
 }
-
-

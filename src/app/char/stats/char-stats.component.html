@@ -1,4 +1,3 @@
-
 <div>
     <label for="strength">Stärke</label>    
     <input id="strength" [(ngModel)]="character.stats.strength" placeholder="Stärke" />
@@ -31,13 +30,13 @@
 
 <div>
     <label for="charisma">Charisma</label>    
-    <input id="charisma" [(ngModel)]="character.stats.wisdom" placeholder="charisma" />
+    <input id="charisma" [(ngModel)]="character.stats.charisma" placeholder="charisma" />
     <label>{{character.stats.calculated.charisma}}</label>
 </div>
 
 <div>    
     <label>Passive Weisheit: {{character.stats.calculated.passive_wisdom}}</label>
-    <label>Übungsbonus: {{character.stats.calculated.proffeciency_bonus}}</label>
+    <label>Übungsbonus: {{character.stats.calculated.proficiency_bonus}}</label>
 </div>
 
 

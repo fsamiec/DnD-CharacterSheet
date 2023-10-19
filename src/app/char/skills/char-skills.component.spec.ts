@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CharSkillsComponent } from './char-skills.component';
 
 describe('CharStatsComponent', () => {

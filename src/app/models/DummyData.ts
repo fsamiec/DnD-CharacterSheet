@@ -2,7 +2,6 @@ import { Character } from './Character';
 import { Skills } from './enums/Skills';
 import { Stats } from './enums/Stats';
 
-
 export class DummyData {
   char: Character = {
     base: {
@@ -19,115 +18,113 @@ export class DummyData {
     },
     skills: [
       {
-        base: Stats.dexterity,
-        advantage: 0,
-        value: 3,
+        attribute: Stats.dexterity,
+        proficiency: 0,
+        value: 0,
         name: Skills.acrobatics
       },
       {
-        base: Stats.intelligence,
-        advantage: 0,
-        value: 2,
+        attribute: Stats.intelligence,
+        proficiency: 0,
+        value: 0,
         name: Skills.arcana
       },
       {
-        base: Stats.strength,
-        advantage: 0,
-        value: -1,
+        attribute: Stats.strength,
+        proficiency: 0,
+        value: 0,
         name: Skills.athletics
       },
       {
-        base: Stats.charisma,
-        advantage: 0,
+        attribute: Stats.charisma,
+        proficiency: 0,
         value: 2,
         name: Skills.performance
       },
       {
-        base: Stats.charisma,
-        advantage: 0,
+        attribute: Stats.charisma,
+        proficiency: 0,
         value: 2,
         name: Skills.intimidation
       },
       {
-        base: Stats.dexterity,
-        advantage: 2,
+        attribute: Stats.dexterity,
+        proficiency: 2,
         value: 7,
         name: Skills.sleight_of_hand
       },
       {
-        base: Stats.wisdom,
-        advantage: 0,
+        attribute: Stats.wisdom,
+        proficiency: 0,
         value: 2,
         name: Skills.history
       },
       {
-        base: Stats.wisdom,
-        advantage: 0,
+        attribute: Stats.wisdom,
+        proficiency: 0,
         value: 0,
         name: Skills.medicine
       },
       {
-        base: Stats.dexterity,
-        advantage: 1,
+        attribute: Stats.dexterity,
+        proficiency: 1,
         value: 5,
         name: Skills.stealth
       },
       {
-        base: Stats.wisdom,
-        advantage: 0,
+        attribute: Stats.wisdom,
+        proficiency: 0,
         value: 0,
         name: Skills.animal_handling
       },
       {
-        base: Stats.wisdom,
-        advantage: 0,
+        attribute: Stats.wisdom,
+        proficiency: 0,
         value: 0,
         name: Skills.insight
       },
       {
-        base: Stats.intelligence,
-        advantage: 0,
+        attribute: Stats.intelligence,
+        proficiency: 0,
         value: 2,
         name: Skills.investigation
       },
       {
-        base: Stats.intelligence,
-        advantage: 0,
+        attribute: Stats.intelligence,
+        proficiency: 0,
         value: 2,
         name: Skills.nature
       },
       {
-        base: Stats.intelligence,
-        advantage: 0,
+        attribute: Stats.intelligence,
+        proficiency: 0,
         value: 2,
         name: Skills.religion
       },
       {
-        base: Stats.charisma,
-        advantage: 2,
+        attribute: Stats.charisma,
+        proficiency: 2,
         value: 6,
         name: Skills.deception
       },
       {
-        base: Stats.wisdom,
-        advantage: 0,
+        attribute: Stats.wisdom,
+        proficiency: 0,
         value: 0,
         name: Skills.survival
       },
       {
-        base: Stats.charisma,
-        advantage: 1,
+        attribute: Stats.charisma,
+        proficiency: 1,
         value: 4,
         name: Skills.persuasion
       },
       {
-        base: Stats.wisdom,
-        advantage: 1,
+        attribute: Stats.wisdom,
+        proficiency: 1,
         value: 2,
         name: Skills.perception
       },
-
-
     ],        
     stats: {      
       strength: 8,
@@ -144,7 +141,7 @@ export class DummyData {
         wisdom: 0,
         charisma: 0,  
         passive_wisdom: 0,
-        proffeciency_bonus: 0
+        proficiency_bonus: 0
       },
       saving_throws: {
         strength: 0,        

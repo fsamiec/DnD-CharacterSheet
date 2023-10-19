@@ -10,11 +10,13 @@ import { CharacterService } from 'src/app/services/character.service';
 export class CharSkillsComponent {
   character!: Character;  
   
-  constructor(private characterService: CharacterService) { }
+  constructor(private characterService: CharacterService) {
+    
+   }
  
   ngOnInit(): void {
   this.characterService.getCharacter().subscribe(c => {
-      this.character = c      
+      this.character = c;
     });
   }
 }

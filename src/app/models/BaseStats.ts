@@ -1,4 +1,3 @@
-
 export interface BaseStats {
       strength: number;
       dexterity: number;

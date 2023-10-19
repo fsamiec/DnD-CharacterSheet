@@ -1,4 +1,3 @@
-
 export enum Skills {
     acrobatics = 'Akrobatik',
     animal_handling = 'Mit Tieren umgehen',
