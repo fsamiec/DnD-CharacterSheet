@@ -1,4 +1,5 @@
 import { Character } from './Character';
+import { BaseStatsEnum, CharacterSkillsEnum } from './enums/CharacterRace';
 
 
 export class DummyData {
@@ -15,28 +16,118 @@ export class DummyData {
       hit_dice: 1,
       temporary_hit_points: 0,
     },
-    skills: {
-      acrobatics: 0,
-      animal_handling: 0,
-      arcana: 0,
-      athletics: 0,
-      deception: 0,
-      history: 0,
-      insight: 0,
-      intimidation: 0,
-      investigation: 0,
-      medicine: 0,
-      nature: 0,
-      perception: 0,
-      performance: 0,
-      persuasion: 0,
-      religion: 0,
-      sleight_of_hand: 0,
-      stealth: 0,
-      survival: 0,
-      has_advantage: ["sleight_of_hand", "stealth", "deception", "persuasion", "perception"],
-      has_double_advantage: ["sleight_of_hand", "deception", ""]
-    },
+    skills: [
+      {
+        base: BaseStatsEnum.dexterity,
+        advantage: 0,
+        value: 3,
+        name: CharacterSkillsEnum.acrobatics
+      },
+      {
+        base: BaseStatsEnum.intelligence,
+        advantage: 0,
+        value: 2,
+        name: CharacterSkillsEnum.arcana
+      },
+      {
+        base: BaseStatsEnum.strength,
+        advantage: 0,
+        value: -1,
+        name: CharacterSkillsEnum.athletics
+      },
+      {
+        base: BaseStatsEnum.charisma,
+        advantage: 0,
+        value: 2,
+        name: CharacterSkillsEnum.performance
+      },
+      {
+        base: BaseStatsEnum.charisma,
+        advantage: 0,
+        value: 2,
+        name: CharacterSkillsEnum.intimidation
+      },
+      {
+        base: BaseStatsEnum.dexterity,
+        advantage: 2,
+        value: 7,
+        name: CharacterSkillsEnum.sleight_of_hand
+      },
+      {
+        base: BaseStatsEnum.wisdom,
+        advantage: 0,
+        value: 2,
+        name: CharacterSkillsEnum.history
+      },
+      {
+        base: BaseStatsEnum.wisdom,
+        advantage: 0,
+        value: 0,
+        name: CharacterSkillsEnum.medicine
+      },
+      {
+        base: BaseStatsEnum.dexterity,
+        advantage: 1,
+        value: 5,
+        name: CharacterSkillsEnum.stealth
+      },
+      {
+        base: BaseStatsEnum.wisdom,
+        advantage: 0,
+        value: 0,
+        name: CharacterSkillsEnum.animal_handling
+      },
+      {
+        base: BaseStatsEnum.wisdom,
+        advantage: 0,
+        value: 0,
+        name: CharacterSkillsEnum.insight
+      },
+      {
+        base: BaseStatsEnum.intelligence,
+        advantage: 0,
+        value: 2,
+        name: CharacterSkillsEnum.investigation
+      },
+      {
+        base: BaseStatsEnum.intelligence,
+        advantage: 0,
+        value: 2,
+        name: CharacterSkillsEnum.nature
+      },
+      {
+        base: BaseStatsEnum.intelligence,
+        advantage: 0,
+        value: 2,
+        name: CharacterSkillsEnum.religion
+      },
+      {
+        base: BaseStatsEnum.charisma,
+        advantage: 2,
+        value: 6,
+        name: CharacterSkillsEnum.deception
+      },
+      {
+        base: BaseStatsEnum.wisdom,
+        advantage: 0,
+        value: 0,
+        name: CharacterSkillsEnum.survival
+      },
+      {
+        base: BaseStatsEnum.charisma,
+        advantage: 1,
+        value: 4,
+        name: CharacterSkillsEnum.persuasion
+      },
+      {
+        base: BaseStatsEnum.wisdom,
+        advantage: 1,
+        value: 2,
+        name: CharacterSkillsEnum.perception
+      },
+
+
+    ],        
     stats: {      
       strength: 8,
       dexterity: 16,

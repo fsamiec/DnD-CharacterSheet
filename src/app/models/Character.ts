@@ -5,6 +5,6 @@ import { CharacterSkills } from "./CharacterSkills";
 export interface Character {
   base: CharacterBaseData;
   stats: CharacterStats;
-  skills: CharacterSkills;
+  skills: CharacterSkills[];
 }
 

@@ -23,7 +23,7 @@ export class CharacterService {
       dexterity: character.stats.dexterity + 1,
       intelligence: character.stats.intelligence + 1,
       wisdom: character.stats.wisdom + 1,
-      passive_wisdom : character.skills.perception + 10,
+      passive_wisdom : 10,
       proffeciency_bonus: this.calculateProfficiencyBonus(character.base.level)
     }    
   }
