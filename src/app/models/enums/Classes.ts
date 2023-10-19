@@ -1,5 +1,5 @@
 //https://dice-scroller.com/dungeons-and-dragons-klassen/
-export enum CharacterClass {
+export enum Classes {
     Artificer ="Magieschmied",
     Barbarian = "Barbar",
     Bard ="Barde",

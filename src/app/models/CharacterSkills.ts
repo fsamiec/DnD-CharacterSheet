@@ -1,8 +1,9 @@
-import { BaseStatsEnum, CharacterSkillsEnum } from "./enums/CharacterRace";
+import { Skills } from "./enums/Skills";
+import { Stats } from "./enums/Stats";
 
 export interface CharacterSkills{
       advantage: number;      
       value: number;
-      base: BaseStatsEnum;
-      name: CharacterSkillsEnum
+      base: Stats;
+      name: Skills
 }

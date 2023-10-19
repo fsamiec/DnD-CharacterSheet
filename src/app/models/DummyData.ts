@@ -1,5 +1,6 @@
 import { Character } from './Character';
-import { BaseStatsEnum, CharacterSkillsEnum } from './enums/CharacterRace';
+import { Skills } from './enums/Skills';
+import { Stats } from './enums/Stats';
 
 
 export class DummyData {
@@ -18,112 +19,112 @@ export class DummyData {
     },
     skills: [
       {
-        base: BaseStatsEnum.dexterity,
+        base: Stats.dexterity,
         advantage: 0,
         value: 3,
-        name: CharacterSkillsEnum.acrobatics
+        name: Skills.acrobatics
       },
       {
-        base: BaseStatsEnum.intelligence,
+        base: Stats.intelligence,
         advantage: 0,
         value: 2,
-        name: CharacterSkillsEnum.arcana
+        name: Skills.arcana
       },
       {
-        base: BaseStatsEnum.strength,
+        base: Stats.strength,
         advantage: 0,
         value: -1,
-        name: CharacterSkillsEnum.athletics
+        name: Skills.athletics
       },
       {
-        base: BaseStatsEnum.charisma,
+        base: Stats.charisma,
         advantage: 0,
         value: 2,
-        name: CharacterSkillsEnum.performance
+        name: Skills.performance
       },
       {
-        base: BaseStatsEnum.charisma,
+        base: Stats.charisma,
         advantage: 0,
         value: 2,
-        name: CharacterSkillsEnum.intimidation
+        name: Skills.intimidation
       },
       {
-        base: BaseStatsEnum.dexterity,
+        base: Stats.dexterity,
         advantage: 2,
         value: 7,
-        name: CharacterSkillsEnum.sleight_of_hand
+        name: Skills.sleight_of_hand
       },
       {
-        base: BaseStatsEnum.wisdom,
+        base: Stats.wisdom,
         advantage: 0,
         value: 2,
-        name: CharacterSkillsEnum.history
+        name: Skills.history
       },
       {
-        base: BaseStatsEnum.wisdom,
+        base: Stats.wisdom,
         advantage: 0,
         value: 0,
-        name: CharacterSkillsEnum.medicine
+        name: Skills.medicine
       },
       {
-        base: BaseStatsEnum.dexterity,
+        base: Stats.dexterity,
         advantage: 1,
         value: 5,
-        name: CharacterSkillsEnum.stealth
+        name: Skills.stealth
       },
       {
-        base: BaseStatsEnum.wisdom,
+        base: Stats.wisdom,
         advantage: 0,
         value: 0,
-        name: CharacterSkillsEnum.animal_handling
+        name: Skills.animal_handling
       },
       {
-        base: BaseStatsEnum.wisdom,
+        base: Stats.wisdom,
         advantage: 0,
         value: 0,
-        name: CharacterSkillsEnum.insight
+        name: Skills.insight
       },
       {
-        base: BaseStatsEnum.intelligence,
+        base: Stats.intelligence,
         advantage: 0,
         value: 2,
-        name: CharacterSkillsEnum.investigation
+        name: Skills.investigation
       },
       {
-        base: BaseStatsEnum.intelligence,
+        base: Stats.intelligence,
         advantage: 0,
         value: 2,
-        name: CharacterSkillsEnum.nature
+        name: Skills.nature
       },
       {
-        base: BaseStatsEnum.intelligence,
+        base: Stats.intelligence,
         advantage: 0,
         value: 2,
-        name: CharacterSkillsEnum.religion
+        name: Skills.religion
       },
       {
-        base: BaseStatsEnum.charisma,
+        base: Stats.charisma,
         advantage: 2,
         value: 6,
-        name: CharacterSkillsEnum.deception
+        name: Skills.deception
       },
       {
-        base: BaseStatsEnum.wisdom,
+        base: Stats.wisdom,
         advantage: 0,
         value: 0,
-        name: CharacterSkillsEnum.survival
+        name: Skills.survival
       },
       {
-        base: BaseStatsEnum.charisma,
+        base: Stats.charisma,
         advantage: 1,
         value: 4,
-        name: CharacterSkillsEnum.persuasion
+        name: Skills.persuasion
       },
       {
-        base: BaseStatsEnum.wisdom,
+        base: Stats.wisdom,
         advantage: 1,
         value: 2,
-        name: CharacterSkillsEnum.perception
+        name: Skills.perception
       },
 
 
